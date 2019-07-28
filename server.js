@@ -1,12 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const path = require('path');
 const fetch = require('node-fetch');
 
 const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Listening at port ${port}...`));
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.json({ limit: '1mb' }));
 
 app.get('/weather/forecast/:lat/:long', async (request, response) => {
