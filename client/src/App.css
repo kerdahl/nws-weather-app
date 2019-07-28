@@ -1,3 +1,19 @@
+.white-link {
+  color: white;
+}
+
+a {
+  color: lightskyblue;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -21,10 +37,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.card {
-  background-color: #e9ecef;
 }
 
 @keyframes App-logo-spin {
