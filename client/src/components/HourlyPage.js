@@ -43,19 +43,19 @@ function HourlyPage() {
                   day = 'Monday';
                   break;
                 case 2:
-                  day = 'Monday';
+                  day = 'Tuesday';
                   break;
                 case 3:
-                  day = 'Monday';
+                  day = 'Wednesday';
                   break;
                 case 4:
-                  day = 'Monday';
+                  day = 'Thursday';
                   break;
                 case 5:
-                  day = 'Monday';
+                  day = 'Friday';
                   break;
                 case 6:
-                  day = 'Monday';
+                  day = 'Saturday';
                   break;
                 default:
                   day = 'Wut';
