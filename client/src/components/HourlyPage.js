@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/CardColumns';
 import Container from 'react-bootstrap/Container';
-//import getForecast from '../utils/getForecast';
 
 function HourlyPage() {
   const [forecasts, setForecasts] = useState([]);
@@ -79,9 +77,9 @@ function HourlyPage() {
 
   return (
     <Container className="pb-5">
-      <CardColumns>
+      <div className="row">
         {forecasts.map(forecast => (
-          <Card bg="light">
+          <Card bg="light" className="mx-2 my-2" style={{ width: '18rem' }}>
             <Card.Img
               variant="top"
               alt={forecast.shortForecast}
@@ -105,7 +103,7 @@ function HourlyPage() {
             </Card.Body>
           </Card>
         ))}
-      </CardColumns>
+      </div>
     </Container>
   );
 }
