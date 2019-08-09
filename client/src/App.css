@@ -2,6 +2,17 @@
   color: white;
 }
 
+.card-size {
+  width: 18rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
 a {
   color: lightskyblue;
 }

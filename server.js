@@ -7,7 +7,6 @@ const fetch = require('node-fetch');
 const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Listening at port ${port}...`));
-//app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.json({ limit: '1mb' }));
 

@@ -77,15 +77,9 @@ function HourlyPage() {
 
   return (
     <Container className="pb-5">
-      <div
-        className="flexBox"
-        style={{
-          display: 'flex',
-          flexFlow: 'row wrap',
-          justifyContent: 'center'
-        }}>
+      <div className="flexBox flex-container">
         {forecasts.map(forecast => (
-          <Card bg="light" className="mx-2 my-2" style={{ width: '18rem' }}>
+          <Card bg="light" className="mx-4 my-4 card-size">
             <Card.Img
               variant="top"
               alt={forecast.shortForecast}
